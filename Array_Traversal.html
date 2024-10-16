@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array_traversal</title>
+    <script>
+      let Data = [20, 50, 40, 65, 45, 5, 885, 45, 12];
+      function getElement() {
+        // fatching the value through button
+        let e1 = document.getElementById("element").value;
+        // Validation
+        if (e1>=0 && e1 < Data.length && typeof parseInt(e1)==="number") {
+            // document.write(Data[e1]);
+            alert(Data[e1]);
+        }
+        else{
+            alert('Please enter valid input')
+        }
+        
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="element" placeholder="Please Enter" />
+    <button onclick="getElement()">Get Element</button>
+  </body>
+</html>
