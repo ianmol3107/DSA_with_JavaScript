@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let data = [10, 50, 4, 12, 5, 45];
+      function arrInsert() {
+        let e1 = document.getElementById("element1").value;
+        let num = document.getElementById("element2").value;
+        let i;
+        for (i = data.length - 1; i >= e1; i--) {
+          data[i + 1] = data[i];
+        }
+        data[i + 1] = num;
+        alert(data);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="element1" placeholder="Please Enter Place" />
+
+    <input type="text" id="element2" placeholder="Please Enter Number" />
+
+    <button onclick="arrInsert()">Insert</button>
+  </body>
+</html>
