@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        let data = [10, 20, 30, 40, 50, 60];
+      function arrDeletion() {
+        let place  = document.getElementById('element').value;
+        for (let i = place; i < data.length; i++) {
+          data[i] = data[i + 1];
+        }
+        data.pop(data.length - 1);
+        alert(data);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="element" placeholder="Enter Place for Delete">
+    <button onclick="arrDeletion()">Submit</button>
+  </body>
+</html>
